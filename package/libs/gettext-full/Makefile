@@ -109,6 +109,7 @@ HOST_CONFIGURE_VARS += \
 	EMACS="no" \
 
 HOST_CFLAGS += $(HOST_FPIC)
+HOST_MAKE_FLAGS += SMALL_PTRDIFF_T=0
 
 define Host/Bootstrap
 	( \
